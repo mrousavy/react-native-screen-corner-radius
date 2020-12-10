@@ -5,3 +5,8 @@ import { NativeModules } from 'react-native';
  */
 export const ScreenCornerRadius: number =
   NativeModules.ScreenCornerRadius.cornerRadius;
+
+/**
+ * `true` if the screen has rounded corners, `false` otherwise.
+ */
+export const IsScreenRounded = ScreenCornerRadius > 0;
