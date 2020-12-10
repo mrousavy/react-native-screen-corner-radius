@@ -1,17 +1,11 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import ScreenCornerRadius from 'react-native-screen-corner-radius';
+import { ScreenCornerRadius } from 'react-native-screen-corner-radius';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    ScreenCornerRadius.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Screen Corner Radius: {ScreenCornerRadius}</Text>
     </View>
   );
 }
