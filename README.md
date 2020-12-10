@@ -2,6 +2,8 @@
 
 A React Native library to get the Device's Screen's corner radius.
 
+> At the moment, this only works on iOS. See [#1](https://github.com/mrousavy/react-native-screen-corner-radius/issues/1) for Android progress.
+
 ## Installation
 
 ```sh
