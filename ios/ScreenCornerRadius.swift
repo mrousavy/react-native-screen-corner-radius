@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-@objc
+@objc(ScreenCornerRadius)
 class ScreenCornerRadius: NSObject {
   @objc
   func constantsToExport() -> [AnyHashable : Any]! {
