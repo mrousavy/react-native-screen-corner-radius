@@ -18,9 +18,16 @@ class ScreenCornerRadiusModule(reactContext: ReactApplicationContext) :
     return "ScreenCornerRadius"
   }
 
-  // Example method
-  // See https://facebook.github.io/react-native/docs/native-modules-android
-  @ReactMethod(isBlockingSynchronousMethod = true)
+  override fun hasConstants(): Boolean = true
+
+  override fun getConstants(): MutableMap<String, Any?> {
+    val cornerRadius = getCornerRadius()
+
+    return mutableMapOf(
+      "cornerRadius" to cornerRadius,
+    )
+  }
+
   fun getCornerRadius(): Int {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
       rootView = currentActivity?.window?.decorView?.findViewById(android.R.id.content)
