@@ -8,11 +8,15 @@
 
 import Foundation
 import UIKit
-
+import React
 
 @objc(ScreenCornerRadius)
-class ScreenCornerRadius: NSObject {
-  override class func requiresMainQueueSetup() -> Bool {
+class ScreenCornerRadius: NSObject, RCTBridgeModule {
+  static func moduleName() -> String! {
+    return "ScreenCornerRadius"
+  }
+
+  static func requiresMainQueueSetup() -> Bool {
     return true
   }
 
