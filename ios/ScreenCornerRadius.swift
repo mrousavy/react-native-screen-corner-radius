@@ -12,6 +12,10 @@ import UIKit
 
 @objc(ScreenCornerRadius)
 class ScreenCornerRadius: NSObject {
+  override class func requiresMainQueueSetup() -> Bool {
+    return true
+  }
+
   @objc
   func constantsToExport() -> [AnyHashable : Any]! {
     return ["cornerRadius": UIScreen.main.displayCornerRadius]
