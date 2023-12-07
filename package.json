@@ -41,6 +41,9 @@
     "url": "https://github.com/mrousavy/react-native-screen-corner-radius/issues"
   },
   "homepage": "https://github.com/mrousavy/react-native-screen-corner-radius#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@react-native-community/bob": "^0.17.1",
     "@react-native-community/eslint-config": "^3.2.0",
