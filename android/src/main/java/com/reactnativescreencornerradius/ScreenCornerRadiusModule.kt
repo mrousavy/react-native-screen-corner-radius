@@ -18,8 +18,6 @@ class ScreenCornerRadiusModule(reactContext: ReactApplicationContext) :
     return "ScreenCornerRadius"
   }
 
-  override fun hasConstants(): Boolean = true
-
   override fun getConstants(): MutableMap<String, Any?> {
     val cornerRadius = getCornerRadius()
 
