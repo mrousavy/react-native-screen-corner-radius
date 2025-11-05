@@ -28,7 +28,7 @@ class ScreenCornerRadiusModule(reactContext: ReactApplicationContext) :
 
   fun getCornerRadius(): Int {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-      rootView = currentActivity?.window?.decorView?.findViewById(android.R.id.content)
+      rootView = reactApplicationContext.currentActivity?.window?.decorView?.findViewById(android.R.id.content)
       if (rootView != null) {
         val corner =
           rootView?.rootWindowInsets?.getRoundedCorner(RoundedCorner.POSITION_TOP_LEFT)
