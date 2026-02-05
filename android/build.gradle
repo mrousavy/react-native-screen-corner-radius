@@ -4,7 +4,8 @@ buildscript {
 
   repositories {
     google()
-    jcenter()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
   }
 
   dependencies {
@@ -52,7 +53,7 @@ android {
 
 repositories {
   mavenCentral()
-  jcenter()
+  maven { url 'https://jitpack.io' }
   google()
 
   def found = false
