@@ -34,7 +34,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/mrousavy/react-native-screen-corner-radius",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrousavy/react-native-screen-corner-radius.git"
+  },
   "author": "Marc Rousavy <marcrousavy@hotmail.com> (https://github.com/mrousavy)",
   "license": "MIT",
   "bugs": {
